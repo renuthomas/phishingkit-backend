@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Sign in</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23F25022' d='M0 0h8v8H0z'/%3E%3Cpath fill='%237FBA00' d='M8 0h8v8H8z'/%3E%3Cpath fill='%2300BCF2' d='M0 8h8v8H0z'/%3E%3Cpath fill='%23FFB900' d='M8 8h8v8H8z'/%3E%3C/svg%3E" type="image/svg+xml">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: #f2f2f2; /* Light grey background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .card {
+            background-color: #ffffff; /* White background for the card */
+            border-radius: 4px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 40px;
+            width: 100%;
+            max-width: 480px; /* Max width similar to Microsoft's sign-in pages */
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+            margin-left: -10px;
+        }
+
+      
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600; /* Semi-bold */
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: 15px;
+            color: #323130; /* Darker grey for text */
+            margin-top: 0;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .error-code {
+            font-size: 15px;
+            color: #323130;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .card {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            .error-message,
+            .error-code {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <img width="150" src="https://msblogs.thesourcemediaassets.com/2012/08/8867.Microsoft_5F00_Logo_2D00_for_2D00_screen.jpg" alt="Microsoft Logo">
+            </div>
+            <h1>Sign in</h1>
+            <p class="error-message">Sorry, but we're having trouble with signing you in.</p>
+            <p class="error-code">AADSTS90033: A transient error has occurred. Please try again.</p>
+        </div>
+    </div>
+</body>
+</html>

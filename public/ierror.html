@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Internal Server Error</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 80%;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 6rem;
+            margin: 0;
+            color: white;
+        }
+
+        .message {
+            font-size: 1.5rem;
+            margin: 20px 0;
+            color: #f5f5f5;
+        }
+
+        .back-home {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.25rem;
+            background-color: #0095f6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-home:hover {
+            background-color: #007bb5;
+        }
+
+        .instagram-logo {
+            width: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>500</h1>
+        <p class="message">Internal Server Error</p>
+        <p class="message">Something went wrong on our end. Please try again later.</p>
+        
+        <!--<img src="https://wallpapers.com/images/hd/instagram-black-background-1920-x-1440-p20ti2xt91fe1h1d.jpg" style="transform: rotate(90deg); width:125px;height:100px;" alt="Instagram Logo" class="instagram-logo">-->
+
+        <br><br>
+        <a href="http://127.0.0.1:3000/instagram/index.html" class="back-home">Go back to home</a>
+    </div>
+
+</body>
+</html>

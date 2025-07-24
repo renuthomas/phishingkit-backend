@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Available</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            position: relative; /* For "Solved" text positioning */
+        }
+        .icon {
+            margin-bottom: 20px;
+        }
+        .icon img {
+            width: 80px; /* Adjust size as needed */
+            height: auto;
+        }
+        h1 {
+            font-size: 24px;
+            color: #1c1e21;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 16px;
+            color: #606770;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .reload-button {
+            background-color: #1877f2;
+            color: #ffffff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .reload-button:hover {
+            background-color: #166fe5;
+        }
+        .solved-text {
+            position: absolute;
+            font-size: 40px;
+            font-weight: bold;
+            color: blue;
+            transform: rotate(-15deg);
+            opacity: 0.7;
+            pointer-events: none; /* Allows clicks to pass through */
+        }
+        .solved-left {
+            bottom: -50px; /* Adjust position as needed */
+            left: -50px; /* Adjust position as needed */
+        }
+        .solved-right {
+            bottom: -50px; /* Adjust position as needed */
+            right: -50px; /* Adjust position as needed */
+            transform: rotate(15deg);
+        }
+
+        /* Red oval border (for visual reference as in the image) */
+        .red-oval-border {
+            position: absolute;
+            top: 20px; /* Adjust to roughly match the image */
+            left: 20px; /* Adjust to roughly match the image */
+            right: 20px; /* Adjust to roughly match the image */
+            bottom: 20px; /* Adjust to roughly match the image */
+            border: 4px solid red;
+            border-radius: 50%; /* Makes it an oval if container is rectangular */
+            pointer-events: none; /* Allows clicks to pass through */
+            box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <img src="data:image/png;base64,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" alt="Wrench Icon" style="width: 80px; height: auto;">
+        </div>
+        <h1>This page isn't available at the moment</h1>
+        <p>This may be because of a technical error that we're working to fix. Please try reloading this page.</p>
+        <a href="#" class="reload-button" onclick="location.reload(); return false;">Reload Page</a>
+
+    </div>
+</body>
+</html>

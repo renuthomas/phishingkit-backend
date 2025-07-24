@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>400. That's an error.</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            max-width: 900px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .left-content {
+            flex: 1;
+            margin-right: 40px;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
+        .logo img {
+            width: 120px; /* Adjust as needed */
+        }
+        h1 {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #000000; /* Red color for error */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+        .robot-image {
+            flex-shrink: 0;
+            width: 300px; /* Adjust as needed */
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+        .robot-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Basic aresponsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .left-content {
+                margin-right: 0;
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+            </div>
+            <h1>400. That's an error.</h1>
+            <p>The server cannot process the request because it is malformed. It should not be retried. That's all we know.</p>
+        </div>
+        <div class="robot-image">
+            <img src="https://www.google.com/images/errors/robot.png" alt="Robot">
+        </div>
+    </div>
+</body>
+</html>
